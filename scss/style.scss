@@ -1,0 +1,170 @@
+$color-white: #fff;
+$color-black: #000;
+$color-button-first: #061e37;
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+.conteiner{
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+
+//header
+.header{
+    &__body{
+        width: 100%;
+        height: 750px;
+        font-family: Arial, Helvetica, sans-serif;
+        background: url(../image/back-header.png) 100% 100% no-repeat;
+        background-size: auto auto;
+        
+    }
+    &__back{
+        min-width: 100%;
+        min-height: 100%; 
+        font-family: Arial, Helvetica, sans-serif;
+        background: url(../image/header-2.png) 100% 100% no-repeat;
+    }
+    &__nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        top: 45px;
+    }
+    &__link{
+        color: $color-white;
+        margin: 0 25px 0 25px;
+        font-size: 15px;
+        &:hover{
+            color: $color-black;
+            transition: 0.3s ease;
+        }
+    }
+    &__logo{
+        height: auto;
+        width: 100%;
+        max-width: 194px;
+    }
+    &__button{
+        min-width: 78px;
+        min-height: 23px;
+        border: 1px solid $color-white;
+        background-color: transparent;
+        color: $color-white;
+        font-size: 12px;
+        &:hover{
+            border: 1px solid $color-black;
+            background-color: $color-white;
+            color: $color-black;
+        }
+    }
+    &__title{
+        font-size: 55px;
+        color: $color-white;
+        font-weight: bolder;
+        max-width: 470px;
+        line-height: 65px;
+    }
+    &__text{
+        font-size: 18px;
+        color: $color-white;
+        max-width: 560px;
+        line-height: 33px;
+        margin-top: 12px;
+    }
+    &__btn{
+        background-color: $color-button-first;
+        border: 1px solid $color-button-first;
+        color: $color-white;
+        margin-right: 15px;
+        &:hover{
+            background-color: $color-white;
+            border: 1px solid $color-white;
+            color: $color-button-first;
+            transition: 0.3s ease;
+        }
+    }
+    &__btn_white{
+        background-color: $color-white;
+        border: 1px solid $color-white;
+        color: $color-button-first;
+        margin-left: 15px;
+        &:hover{
+            background-color: $color-button-first;
+            border: 1px solid $color-button-first;
+            color: $color-white;
+            transition: 0.3s ease;
+        }
+    }
+    &__info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 195px;
+    }
+    &__buttons{
+        margin-top: 33px;
+    }
+    &__video{
+        min-width: 598px;
+        min-height: 318px;
+        border: 1px solid $color-black;
+        border-radius: 6px;
+        background: url(../image/back-video.png) 100% 100% no-repeat;
+        background-size: 100% 100%;
+        margin-top: 10px;
+    }
+    &__ground{
+        min-width: 100%;
+        min-height: 100%;
+        background: url(../image/video-2.png) 100% 100% no-repeat;
+        background-size: 100% 100%;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__play{
+        height: 60px;
+        width: 60px;
+        background-color: $color-button-first;
+        border-radius: 5px;
+        position: relative;
+    }
+    &__triagle{
+        border: 8px solid transparent; 
+        border-left: 12px solid $color-white;
+        position: absolute;
+        top: 50%;
+        left: 55%;
+        transform: translate(-50%, -45%)
+    }
+    &__watch{
+        font-size: 12px;
+        color: $color-button-first;
+        font-weight: bold;
+        margin-top: 22px;
+    }
+    
+}
+.button{
+    min-height: 55px;
+    min-width: 150px;
+    border-radius: 5px;
+    font-size: 15px;
+}

@@ -7,6 +7,7 @@ $color_box_1: #80d8ff;
 $color_box_2: #82b1ff;
 $color_box_3: #b388ff;
 $color_box_4: #ea80fc;
+$color_desc: #78909c;
 
 %button {
     min-height: 55px;
@@ -26,6 +27,12 @@ $color_box_4: #ea80fc;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+}
+%hide{
+    display: block; 
+    -webkit-animation:fade ease-in 0.5s; 
+    -moz-animation:fade ease-in 0.5s;
+    animation:fade ease-in 0.5s; 
 }
 
 
@@ -303,6 +310,8 @@ a{
         justify-content: center;
     }
 }
+
+//service{
 .service{
     &__body{
         max-width: 100%;
@@ -389,10 +398,7 @@ a{
     display: none;
 }
 .hider:checked + label + div {
-    display: block; 
-    -webkit-animation:fade ease-in 0.5s; 
-    -moz-animation:fade ease-in 0.5s;
-    animation:fade ease-in 0.5s; 
+    @extend %hide
 }
 .hide {
     display: none;
@@ -401,10 +407,7 @@ a{
     display: none;
 }
 .hide:checked + label + div {
-    display: block; 
-    -webkit-animation:fade ease-in 0.5s; 
-    -moz-animation:fade ease-in 0.5s;
-    animation:fade ease-in 0.5s; 
+    @extend %hide
 }
 .hid {
     display: none;
@@ -413,10 +416,7 @@ a{
     display: none;
 }
 .hid:checked + label + div {
-    display: block; 
-    -webkit-animation:fade ease-in 0.5s; 
-    -moz-animation:fade ease-in 0.5s;
-    animation:fade ease-in 0.5s; 
+    @extend %hide
 }
 .hi {
     display: none;
@@ -425,10 +425,7 @@ a{
     display: none;
 }
 .hi:checked + label + div {
-    display: block; 
-    -webkit-animation:fade ease-in 0.5s; 
-    -moz-animation:fade ease-in 0.5s;
-    animation:fade ease-in 0.5s; 
+    @extend %hide
 }
 .h {
     display: none;
@@ -437,10 +434,7 @@ a{
     display: none;
 }
 .h:checked + label + div {
-    display: block; 
-    -webkit-animation:fade ease-in 0.5s; 
-    -moz-animation:fade ease-in 0.5s;
-    animation:fade ease-in 0.5s; 
+    @extend %hide
 }
 @-moz-keyframes fade {
     from { 
@@ -461,5 +455,113 @@ a{
         opacity: 0; }
     to { 
         opacity: 1 
+    }
+}
+
+//customer
+.customer{
+    &__body{
+        width: 100%;
+        height: 565px;
+        font-family: Arial, Helvetica, sans-serif;
+        background: url(../image/back-customer.png) 100% 100% no-repeat;
+        background-size: auto auto;
+    }
+    &__back{
+        min-width: 100%;
+        min-height: 100%; 
+        font-family: Arial, Helvetica, sans-serif;
+        background: url(../image/header-2.png) 100% 100% no-repeat;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    &__title{
+        color: $color-white;
+        font-size: 45px;
+        width: 430px;
+        line-height: 52px;
+    }
+    &__text{
+        color: $color-white;
+        font-size: 15px;
+        width: 520px;
+        margin-top: 12px;
+        line-height: 25px;
+    }
+    &__button{
+        @extend %button;
+        background-color: $color-button-first;
+        border: 1px solid $color-button-first;
+        color: $color-white;
+        margin-top: 204px;
+        &:hover{
+            background-color: $color-white;
+            border: 1px solid $color-white;
+            color: $color-button-first;
+            transition: 0.3s ease;
+        }
+    }
+    &__desc{
+        position: relative;
+        top: 130px;
+    }
+    &__box{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 70px;
+        position: relative;
+        top: 69px;
+    }
+    &__info{
+        background-color: $color-white;
+        padding: 32px;
+    }
+    &__image{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 50px;
+    }
+    &__info{
+        width: 650px;
+        height: 160px;
+        border-radius: 5px;
+    }
+    &__name{
+        color: $color-button-first;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    &__description{
+        color: $color_desc;
+        font-style: italic;
+        font-size: 15px;
+        line-height: 23px;
+        margin-top: 13px;
+    }
+    &__bottom {
+    margin-top: 6%;
+    margin-left: 57%;
+    border: solid $color-white;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 6px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    }
+    &__top{
+    position: relative;
+    top: 8%;
+    margin-left: 56%;
+    border: solid $color-white;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 6px;
+    transform: rotate(225deg);
+    -webkit-transform: rotate(225deg);
     }
 }

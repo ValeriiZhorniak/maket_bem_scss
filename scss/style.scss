@@ -470,7 +470,6 @@ a{
     &__back{
         min-width: 100%;
         min-height: 100%; 
-        font-family: Arial, Helvetica, sans-serif;
         background: url(../image/header-2.png) 100% 100% no-repeat;
         display: flex;
         flex-direction: row;
@@ -563,5 +562,79 @@ a{
     padding: 6px;
     transform: rotate(225deg);
     -webkit-transform: rotate(225deg);
+    }
+}
+
+//team
+.team{
+    &__body{
+        width: 100%;
+        height: 760px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title{
+        font-size: 45px;
+        color: $color-button-first;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 95px;
+    }
+    &__subtitle{
+        font-size: 15px;
+        color: $color_text;
+        text-align: center;
+        width: 560px;
+        line-height: 24px;
+        margin-top: 18px;
+    }
+    &__photo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 75px;
+    }
+    &__side{
+        height: 100px;
+        max-width: 100px;
+        border-radius: 50%;
+        margin: 0 25px 0 25px;
+    }
+    &__center{
+        height: 180px;
+        max-width: 180px;
+        border-radius: 50%;
+        margin: 0 25px 0 25px;
+        border: $color-white solid 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    &__name{
+        font-size: 18px;
+        color: $color-button-first;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 58px;
+    }
+    &__desc{
+        font-size: 15px;
+        color: $color_text;
+        text-align: center;
+        width: 630px;
+        line-height: 24px;
+        margin-top: 17px;
+    }
+    .icon{
+        margin: 0 13px 0 13px;
+    }
+    &__social{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-top: 25px;
     }
 }

@@ -8,6 +8,7 @@ $color_box_2: #82b1ff;
 $color_box_3: #b388ff;
 $color_box_4: #ea80fc;
 $color_desc: #78909c;
+$color_bg: #fafafa;
 
 %button {
     min-height: 55px;
@@ -33,6 +34,18 @@ $color_desc: #78909c;
     -webkit-animation:fade ease-in 0.5s; 
     -moz-animation:fade ease-in 0.5s;
     animation:fade ease-in 0.5s; 
+}
+%input{
+    font-size: 14px;
+    width: 280px;
+    height: 50px;
+    border: solid 1px $color-button-first;
+    background-color: $color_bg;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 20px; 
+    color: $color-button-first;
+    padding-left: 20px;  
 }
 
 
@@ -568,8 +581,8 @@ a{
 //team
 .team{
     &__body{
-        width: 100%;
-        height: 760px;
+        min-width: 100%;
+        min-height: 760px;
         font-family: Arial, Helvetica, sans-serif;
         display: flex;
         flex-direction: column;
@@ -586,7 +599,7 @@ a{
         font-size: 15px;
         color: $color_text;
         text-align: center;
-        width: 560px;
+        max-width: 560px;
         line-height: 24px;
         margin-top: 18px;
     }
@@ -598,13 +611,13 @@ a{
         margin-top: 75px;
     }
     &__side{
-        height: 100px;
+        min-height: 100px;
         max-width: 100px;
         border-radius: 50%;
         margin: 0 25px 0 25px;
     }
     &__center{
-        height: 180px;
+        min-height: 180px;
         max-width: 180px;
         border-radius: 50%;
         margin: 0 25px 0 25px;
@@ -622,7 +635,7 @@ a{
         font-size: 15px;
         color: $color_text;
         text-align: center;
-        width: 630px;
+        max-width: 630px;
         line-height: 24px;
         margin-top: 17px;
     }
@@ -637,4 +650,133 @@ a{
         align-content: center;
         margin-top: 25px;
     }
+}
+
+//contact
+.contact{
+    &__body{
+        min-width: 100%;
+        min-height: 660px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: $color_bg;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }  
+    &__fieldset{
+        max-width: 600px;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        flex-wrap: wrap;
+    } 
+    &__input{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        min-width: 600px;
+        margin-bottom: 20px;
+    }
+    &__button{
+        @extend %button;
+        background-color: $color_green;
+        border: 1px solid $color_green;
+        color: $color-white;
+        font-size: 16px;
+        margin-top: 17px;
+        outline: none;
+        &:hover{
+            background-color: $color-white;
+            border: 1px solid $color-white;
+            color: $color_green;
+            transition: 0.3s ease;
+        }
+    }
+    &__form{
+        min-width: 600px;
+        margin-top: 26px;
+    }
+    &__first_name{
+        @extend %input;
+    }
+    &__last_name{
+        @extend %input;
+    }  
+    &__email{
+        @extend %input;
+    }  
+    &__phone{
+        @extend %input;
+    }
+    &__message {
+        resize: none;
+        min-height: 150px;
+        min-width: 600px;
+        background-color: $color_bg;
+        border: solid 1px $color-button-first;
+        outline: none; 
+        padding: 20px 0 0 20px; 
+        font-size: 14px;
+        border-radius: 5px;
+    }
+    input::placeholder { 
+        color: $color-button-first; 
+    } 
+    textarea::placeholder { 
+        color: $color-button-first; 
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    &__buttom{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title{
+        font-size: 45px;
+        color: $color-button-first;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 43px;
+    } 
+    &__subtitle{
+        font-size: 15px;
+        color: $color-button-first;
+        text-align: center;
+        width: 560px;
+        line-height: 25px;
+        margin-top: 17px;
+    }
+    &__label{
+        color: $color-button-first;
+        font-size: 15px;
+        &:before {
+            content: "";
+            color: $color-button-first;
+            display: inline-block;
+            margin-right: 15px;
+            position: relative;
+            text-align: center;
+            text-indent: 0px;
+            width: 15px;
+            height: 15px;
+            background: $color_bg;
+            border: 2px solid $color-button-first;
+            border-image: initial;
+            vertical-align: middle;
+        }
+    }
+    #checkbox {
+        display: none;
+    }
+    #checkbox:checked + .contact__label:before {
+        content: "✓";
+    }
+    #checkbox:disabled + .contact__label:before {
+        background: $color_bg;
+    }
+    &__checkbox{
+        margin-top: 12px;
+    } 
 }

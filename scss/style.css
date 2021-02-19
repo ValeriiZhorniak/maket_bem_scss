@@ -601,9 +601,6 @@ a {
   line-height: 24px;
   margin-top: 17px;
 }
-.team .icon {
-  margin: 0 13px 0 13px;
-}
 .team__social {
   display: flex;
   flex-direction: row;
@@ -611,6 +608,10 @@ a {
   align-items: center;
   align-content: center;
   margin-top: 25px;
+}
+
+.icon {
+  margin-left: 25px;
 }
 
 .contact__body {
@@ -724,4 +725,63 @@ a {
 }
 .contact__checkbox {
   margin-top: 12px;
+}
+
+.footer__body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 300px;
+  background-color: #061e37;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footer__list {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  margin-top: 50px;
+}
+.footer__about {
+  margin-left: 23px;
+}
+.footer__about:before {
+  content: "●";
+  color: #fff;
+  margin-right: 22px;
+}
+.footer__link {
+  color: #fff;
+  margin-left: 50px;
+  font-size: 15px;
+}
+.footer__link:hover {
+  color: #000;
+  transition: 0.3s ease;
+}
+.footer__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  margin-top: 55px;
+}
+.footer__image {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 90px;
+}
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 103px;
+}
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
 }

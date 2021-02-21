@@ -84,3 +84,122 @@
         width: 550px;
     }
 }  
+@media (max-width: 767px){
+    .header__nav{
+        flex-direction: column;
+    }
+    .header__link{
+        margin: 0 5px 0 5px;
+    }
+    .header__button{
+        margin-top: 10px;
+    }
+    .header__title{
+        font-size: 35px;
+    }
+    .header__video{
+        min-width: 300px;
+        min-height: 200px;
+    }
+    .header__text{
+        font-size: 12px;
+        text-align: center;
+    }
+    .header__btn{
+        margin-right: 0px;
+    }
+    .header__btn_white{
+        margin-left: 0px;
+    }
+    .header__title{
+        text-align: center;
+    }
+    .info__block{
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+    .info__button{
+        margin: 25px 0 20px 0;
+    }
+    .boxs__image{
+        display: none;
+    }
+    .boxs__text{
+        font-size: 13px;
+    }
+    .service__block{
+        width: 260px;
+    }
+    .service__hide{
+        width: 260px;
+    }
+    .customer__title{
+        text-align: center;
+        font-size: 20px;
+    }
+    .customer__text{
+        text-align: center;
+    }
+    .customer__info{
+        width: 300px;
+        padding: 10px;
+    }
+    .customer__image{
+        display: none;
+    }
+    .customer__text{
+        width: 320px;
+        margin-left: 10px;
+    }
+    .customer__button{
+        margin-left: 100px;
+    }
+    .customer__title{
+        width: 300px;
+        line-height: 30px;
+        margin-left: 15px;
+    }
+    .customer__description{
+        font-size: 12px;
+        margin-top: 13px;
+    }
+    .team__side{
+        display: none;
+    }
+    .contact__message {
+        min-width: 300px;
+    }
+    .contact__first_name{
+        width: 140px;
+    }
+    .contact__last_name{
+        width: 140px;
+    }  
+    .contact__email{        
+        width: 140px;
+    }  
+    .contact__phone{        
+        width: 140px;
+    }
+    .contact__form{
+        min-width: 300px;
+    }
+    .contact__fieldset{
+        max-width: 300px;
+    } 
+    .contact__input{
+        min-width: 300px;
+    }
+    .contact__subtitle{
+        width: 300px;
+    }
+    .footer__body{
+        height: 270px;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .footer__social{
+        margin-right: 50px;
+    }
+}

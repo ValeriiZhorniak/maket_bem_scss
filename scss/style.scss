@@ -137,7 +137,6 @@ a{
         border: 1px solid $color-button-first;
         color: $color-white;
         margin-right: 15px;
-
         &:hover{
             background-color: $color-white;
             border: 1px solid $color-white;
@@ -533,17 +532,15 @@ a{
     &__info{
         background-color: $color-white;
         padding: 32px;
+        width: 650px;
+        height: 160px;
+        border-radius: 5px;
     }
     &__image{
         width: 60px;
         height: 60px;
         border-radius: 50%;
         margin-right: 50px;
-    }
-    &__info{
-        width: 650px;
-        height: 160px;
-        border-radius: 5px;
     }
     &__name{
         color: $color-button-first;

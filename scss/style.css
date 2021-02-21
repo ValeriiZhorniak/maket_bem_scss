@@ -498,17 +498,15 @@ a {
 .customer__info {
   background-color: #fff;
   padding: 32px;
+  width: 650px;
+  height: 160px;
+  border-radius: 5px;
 }
 .customer__image {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   margin-right: 50px;
-}
-.customer__info {
-  width: 650px;
-  height: 160px;
-  border-radius: 5px;
 }
 .customer__name {
   color: #061e37;

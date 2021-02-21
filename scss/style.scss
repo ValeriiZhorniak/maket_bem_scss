@@ -247,6 +247,8 @@ a{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+        align-content: center;
         flex-wrap: wrap;
         margin-top: 102px;
     }
@@ -350,7 +352,7 @@ a{
         margin-top: 20px;
     }
     &__block{
-        min-width: 800px;
+        width: 800px;
         min-height: 10px;
         display: flex;
         flex-direction: row;
@@ -485,9 +487,9 @@ a{
         min-height: 100%; 
         background: url(../image/header-2.png) 100% 100% no-repeat;
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
-        flex-wrap: wrap;
     }
     &__title{
         color: $color-white;
@@ -533,10 +535,10 @@ a{
         padding: 32px;
     }
     &__image{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-right: 50px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-right: 50px;
     }
     &__info{
         width: 650px;
@@ -556,25 +558,25 @@ a{
         margin-top: 13px;
     }
     &__bottom {
-    margin-top: 6%;
-    margin-left: 57%;
-    border: solid $color-white;
-    border-width: 0 4px 4px 0;
-    display: inline-block;
-    padding: 6px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
+        margin-top: 6%;
+        margin-left: 57%;
+        border: solid $color-white;
+        border-width: 0 4px 4px 0;
+        display: inline-block;
+        padding: 6px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
     }
     &__top{
-    position: relative;
-    top: 8%;
-    margin-left: 56%;
-    border: solid $color-white;
-    border-width: 0 4px 4px 0;
-    display: inline-block;
-    padding: 6px;
-    transform: rotate(225deg);
-    -webkit-transform: rotate(225deg);
+        position: relative;
+        top: 8%;
+        margin-left: 56%;
+        border: solid $color-white;
+        border-width: 0 4px 4px 0;
+        display: inline-block;
+        padding: 6px;
+        transform: rotate(225deg);
+        -webkit-transform: rotate(225deg);
     }
 }
 

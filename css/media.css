@@ -14,9 +14,6 @@
     }
 }
 @media (max-width: 1200px){
-    .conteiner{
-        max-width: 970px;
-    }
     .header__info{
         margin-top: 70px;
     }
@@ -52,9 +49,6 @@
     }
 }
 @media (max-width: 992px){
-    .conteiner{
-        max-width: 750px;
-    }
     .header__link{
         margin: 0 15px 0 15px;
     }
